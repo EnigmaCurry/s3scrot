@@ -1,22 +1,22 @@
-s3scrot
--------
+# s3scrot
+
 
 A screenshot tool that automatically uploads to Amazon S3 and copies
 the URL to the clipboard.
 
-# Requirements
+### Requirements
 
  * scrot
  * xclip
  * python-gobject
 
-# Install
+### Install
 
 After ensuring dependencies are met, simply run:
 
     pip install s3scrot
 
-# Usage
+### Usage
 
 The first time you run s3scrot it will complain that you do not have a
 config file. It will create a default one for you in your home
@@ -24,7 +24,7 @@ directory (~/.s3scrot). Edit this file according to the comments in
 that file. You will need to enter your Amazon S3 bucket, and access
 credentials. 
 
-# Options
+### Options
 
     usage: s3scrot [-h] [-n] [-c] [-b] [-p]
     
@@ -41,14 +41,14 @@ credentials.
 
 Example:
 
-To take a screenshot of just a portion of your screen:
+#### To take a screenshot of just a portion of your screen:
 
     s3scrot
 
 Then click on a window or click and drag across a rectangular region
 of the screen you wish to capture.
 
-An example using all the options:
+#### An example using all the options:
 
     s3scrot -ncbpj -q 50
 
