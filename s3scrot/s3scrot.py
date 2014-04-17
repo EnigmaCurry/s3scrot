@@ -105,7 +105,7 @@ def take_screenshot(non_interactive=False, img_format='png', quality='75'):
 def upload_to_s3(path, config):
     conn = S3Connection(config['s3']['access_key'], config['s3']['secret_key'])
     bucket = conn.get_bucket(config['s3']['bucket'])
-    key = Key(bucket, uuid.uuid1())
+    key = Key(bucket, str(uuid.uuid1())+"."+path.split(".")[-1])
     key.set_contents_from_filename(path)
     key.set_canned_acl('public-read')
     return key.generate_url(0, query_auth=False, force_http=True)
