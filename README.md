@@ -9,6 +9,7 @@ the URL to the clipboard.
  * scrot
  * xclip
  * python-gobject
+ * An [AWS S3 account](http://aws.amazon.com/s3/)
 
 ### Install
 
