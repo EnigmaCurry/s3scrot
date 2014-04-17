@@ -39,16 +39,16 @@ credentials.
       -b, --open-browser    Open browser to screenshot URL
       -p, --print-url       Print URL
 
-Example:
+#### Examples:
 
-#### To take a screenshot of just a portion of your screen:
+##### To take a screenshot of just a portion of your screen:
 
     s3scrot
 
 Then click on a window or click and drag across a rectangular region
 of the screen you wish to capture.
 
-#### An example using all the options:
+##### An example using all the options:
 
     s3scrot -ncbpj -q 50
 
@@ -59,7 +59,7 @@ and uses JPEG compression instead of PNG, at a quality level of 50.
 ### How I use this
 
 I wanted an easy way to paste screenshots into IRC / hipchat. I use
-[i3wm|http://i3wm.org/] and so I have some easy keybindings setup to
+[i3wm](http://i3wm.org/) and so I have some easy keybindings setup to
 use s3scrot:
 
     bindsym $mod+Print exec "s3scrot -b"
