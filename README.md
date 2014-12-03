@@ -27,7 +27,7 @@ credentials.
 
 ### Options
 
-    usage: s3scrot [-h] [-n] [-c] [-b] [-p]
+    usage: s3scrot [-h] [-n] [-c] [-b] [-p] [-j] [-q QUALITY]
     
     s3scrot
     
@@ -39,7 +39,12 @@ credentials.
       -c, --no-clipboard    Do not copy URL to clipboard
       -b, --open-browser    Open browser to screenshot URL
       -p, --print-url       Print URL
-
+      -j, --jpeg            Use JPEG compression instead of PNG
+      -q QUALITY, --quality QUALITY
+                            Image quality (1-100) high value means high size, low
+                            compression. Default: 75. For lossless png, low
+                            quality means high compression.
+    
 #### Examples:
 
 ##### To take a screenshot of just a portion of your screen:
